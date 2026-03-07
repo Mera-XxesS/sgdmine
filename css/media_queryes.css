@@ -1,0 +1,28 @@
+/* -------------------------------------------DISPOSITIVOS MOVILES */
+@media screen and (max-width: 576px){
+    body {
+        background-color: red;
+    }
+    /* ---------------------------------------INFORMACION DEL DM */
+    .dm_photo img{
+        max-height: 320px;
+    }
+    table {
+        font-size: .83em;
+        font-weight: bold;
+    }
+    /* ---------------------------------------INFORMACION DEL CAE/SE */
+    
+}
+/* -------------------------------------------TABLETS */
+@media screen and (min-width: 576px){
+    body {
+        background-color: blue;
+    }
+}
+/* -------------------------------------------PC*/
+@media screen and (min-width: 992px){
+    body {
+        background-color: yellow;
+    }
+}
