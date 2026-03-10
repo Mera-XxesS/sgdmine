@@ -4,8 +4,14 @@
         background-color: red;
     }
     /* ---------------------------------------INFORMACION DEL DM */
+    .content{
+        width: 100%;
+    }
+    .dm_content{
+        width: 100%;
+    }
     .dm_photo img{
-        max-height: 320px;
+        max-height: 300px;
     }
     table {
         font-size: .83em;
