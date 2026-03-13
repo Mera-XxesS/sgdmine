@@ -1,19 +1,32 @@
+:root {
+  --color-principal: #E4007C;
+  --color-secundario: #F7F7FF;
+  --color-terciario: #212529;
+}
 *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-terciario);
+}
+body{
+    background-color: var(--color-principal);
 }
 .header{
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: var(--color-terciario);
 }
 .header_content{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    padding: .3em;
 }
-
+.header_content img{
+    background-color: var(--color-secundario);
+}
 .content{
     display: flex;
     flex-direction: column;
@@ -21,18 +34,19 @@
     align-items: center;
 }
 input[type ="radio"] {
-    accent-color: #4CAF50;
-     pointer-events: none;    
+    accent-color: var(--color-principal);
+    pointer-events: none;    
 }
 label{
     font-weight: normal;
+    color: var(--color-principal);
 }
 /* ---------------------------------------INFORMACION DEL DM */
 .dm_content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: pink;
+    background-color: var(--color-secundario);
     margin-top: 5%;
     max-height: 220px;
     border-radius: 25px;
@@ -48,12 +62,12 @@ label{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: pink;
+    background-color: var(--color-secundario);
     padding: .5em;
     max-height: 150px;
     border-radius: 25px;
 }
-.are-zore{
+.are_zore{
     display: flex;
     justify-content: space-between;
     width: 70%;

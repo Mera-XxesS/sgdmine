@@ -1,8 +1,10 @@
+:root {
+  --color-principal: #E4007C;
+  --color-secundario: #F7F7FF;
+  --color-terciario: #212529;
+}
 /* -------------------------------------------DISPOSITIVOS MOVILES */
 @media only screen and (max-width: 480px) {
-    body {
-        background-color: red;
-    }
     .header_content img{
         max-height: 30px;
         padding: .3em;
@@ -16,9 +18,11 @@
     h1 {
         font-size: 1.5em;
         font-weight: 900;
+        color: var(--color-principal);
     }
     .sgdm_label{
-        font-size: .4em;
+        font-size: .5em;
+        color: var(--color-principal);
     }
     /* ---------------------------------------INFORMACION DEL DM */
     .dm_content{
@@ -56,9 +60,6 @@
     }
 }
 /* ----------------------------------------CELULARES GRANDES TABLETS PEQUEÑAS */
-@media only screen and (min-width: 480px) {
-    
-}
 @media only screen and (min-height: 700px) {
     .carrusel_content{
         height: 50%;
