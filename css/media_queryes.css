@@ -1,24 +1,43 @@
 /* -------------------------------------------DISPOSITIVOS MOVILES */
-@media screen and (max-width: 576px){
+@media only screen and (max-width: 480px) {
     body {
         background-color: red;
     }
     /* ---------------------------------------INFORMACION DEL DM */
-    .content{
-        width: 100%;
-    }
+   
     .dm_content{
-        width: 100%;
+        width: 90%;
+        max-height: 150px;
+        margin-top: 10%;
+        justify-content: center;
     }
     .dm_photo img{
-        max-height: 300px;
+        max-height: 200px;
+    }
+    h3{
+        font-size: .8em;
+    }
+    h5{
+        font-size: .6em;
     }
     table {
-        font-size: .83em;
+        font-size: .6em;
         font-weight: bold;
     }
     /* ---------------------------------------INFORMACION DEL CAE/SE */
-    
+    .secae_photo{
+        width: 30%;
+    }
+    .secae_photo img{
+        width: 100%;
+    }
+    .secae_content{
+        margin-top: 15%;
+    }
+    /* ----------------------------------------CORRUSEL */
+    .carrusel_content{
+        height: 40%;
+    }
 }
 /* -------------------------------------------TABLETS */
 @media screen and (min-width: 576px){
