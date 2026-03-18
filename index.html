@@ -6,6 +6,7 @@
     <title>Sistema de Monitoreo de Dispositivos Moviles del INE</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media_queryes.css">
+    <!-- ESTO ES LA LIBRERIA QUE SE UTILIZA PARA EL MENSAJE DEL INICIO -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
@@ -26,7 +27,7 @@
             </div>
             <div class="dm_info">
                 <h3>INFORMACION DISPOSITIVO</h3>
-                <h5 class="no">Dispositivo N° <label id="no">001</label></h5>
+                <h5 class="no">Dispositivo N° <label id="no_dm">001</label></h5>
                 <h5 class="imei">IMEI : <label id="imei">123456789098765</label></h5>
                 <h5 class="no_serie">N° Serie : <label id="no_serie">XYZ123WV</label></h5>
                 <h5 class="model"> Modelo : <label id="model">Wiko T3</label></h5>     
@@ -40,28 +41,28 @@
                     <!-- Fila de datos 1 -->
                     <tr>
                         <td>Cargador</td>
-                        <td class="td_radio"><input type="radio" name="" id=""></td>
-                        <td class="td_radio"><input type="radio" name="" id=""></td>
-                        <td class="td_radio"><input type="radio" name="" id=""></td>
+                        <td class="td_radio"><input type="radio" name="" id="has_charger"></td>
+                        <td class="td_radio"><input type="radio" name="" id="works_charger"></td>
+                        <td class="td_radio"><input type="radio" name="" id="original_charger"></td>
                     </tr>
                     <!-- Fila de datos 2 -->
                     <tr>
                         <td>Cable USB</td>
-                        <td class="td_radio"><input type="radio" name="" id=""></td>
-                        <td class="td_radio"><input type="radio" name="" id=""></td>
-                        <td class="td_radio"><input type="radio" name="" id=""></td>
+                        <td class="td_radio"><input type="radio" name="" id="has_usb"></td>
+                        <td class="td_radio"><input type="radio" name="" id="works_usb"></td>
+                        <td class="td_radio"><input type="radio" name="" id="original_usb"></td>
                     </tr>
                     <tr>
                         <td>Funda</td>
                         <td></td>
                         <td></td>
-                        <td class="td_radio"><input type="radio" name="" id=""></td>
+                        <td class="td_radio"><input type="radio" name="" id="protect"></td>
                     </tr>
                     <tr>
                         <td>Clip</td>
                         <td></td>
                         <td></td>
-                        <td class="td_radio"><input type="radio" name="" id=""></td>
+                        <td class="td_radio"><input type="radio" name="" id="clip"></td>
                     </tr>
                 </table>          
             </div>
@@ -73,7 +74,7 @@
                 <H5 class="secae_position">Puesto : <label id="secae_position">Técnico de voz y datos</label></H5>
                 <H5 class="se"> SE : <label id="se">Jesus Ivan Pineda Contreras</label></H5>
                 <H5 class="secae_phone_number">Telefono : <label id="secae_phone_number">8719230680</label></H5>
-                <H5 class="secae_e-mail">Correo : <label id="secae_e-mail">leonardo.mazuca@ine.mx</label></H5>
+                <H5 class="secae_e-mail">Correo : <label id="secae_email">leonardo.mazuca@ine.mx</label></H5>
                 <div class="are_zore">
                     <H5 class="secae_zore">Zore : <label id="secae_zore">01</label></H5>
                     <H5 class="secae_are">Are : <label id="secae_are">01</label></H5>
@@ -104,5 +105,6 @@
     </div>
 </body>
 <script src="js/main.js"></script>
+<script src="js/load_data.js"></script>
 
 </html>

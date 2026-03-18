@@ -1,4 +1,5 @@
-Swal.fire({
+/* --------------------------ESTO ES EL JS DEL MENSAJE DEL INICIO */
+Swal.fires({
   title: "<strong>CUIDADO</strong>",
   icon: "info",
   html: `
@@ -10,3 +11,4 @@ Swal.fire({
   focusConfirm: true,
   confirmButtonText: `Confirmar!`
 });
+/*  */

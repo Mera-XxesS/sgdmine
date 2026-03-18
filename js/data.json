@@ -1,0 +1,48 @@
+{
+  "dispositivos": [
+    {
+      "no_dm": "001",
+      "imei": "359679325658233",
+      "no_serie": "ZY22J6MVPG",
+      "model": "MOTOROLA G54",
+      "has_charger": true,
+      "works_charger": true,
+      "original_charger": true,
+      "has_usb": true,
+      "works_usb": true,
+      "original_usb": true,
+      "protect": true,
+      "clip": true,
+      "secae_name": "CLAUDIA FAVELA MONTELONGO",
+      "secae_position": "SUPERVISOR ELECTORAL",
+      "se": null,
+      "secae_phone_number": "8717812352",
+      "secae_email": "claudia198223@gmail.com",
+      "secae_zore": "01",
+      "secae_are": null,
+      "secae_employee_number": "este no me lo sé"
+    },
+    {
+      "no_dm": "002",
+      "imei": "359679325659397",
+      "no_serie": "ZY22J6NK93",
+      "model": "WIKO T3",
+      "has_charger": true,
+      "works_charger": true,
+      "original_charger": false,
+      "has_usb": true,
+      "works_usb": true,
+      "original_usb": false,
+      "protect": true,
+      "clip": true,
+      "secae_name": "SANJUANA ROSALES MORALES",
+      "secae_position": "CAPACITADOR ASISTENTE ELECTORAL",
+      "se": "CLAUDIA FAVELA MONTELONGO",
+      "secae_phone_number": "8712302619",
+      "secae_email": "sanjuanarosm@gmail.com",
+      "secae_zore": "02",
+      "secae_are": "01",
+      "secae_employee_number": "este no me lo sé tampoco"
+    }
+  ]
+}
