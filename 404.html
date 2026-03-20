@@ -8,6 +8,9 @@
 <body>
     <script>
         console.log(document.URL);
+        const $path = document.URL,
+            $imei = $path.split('/').pop();
+            console.log($imei);
         localStorage.setItem("imei", 0);
     </script>
 </body>
