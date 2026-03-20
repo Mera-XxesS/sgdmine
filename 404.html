@@ -12,7 +12,7 @@
             $imei = $path.split('/').pop();
             console.log($imei);
         localStorage.setItem("imei", $imei.toString());
-        console.log(imei);
+        console.log(localStorage.getItem("imei"));
     </script>
 </body>
 </html>
