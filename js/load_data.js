@@ -60,7 +60,5 @@ async function loadData(url, imei) {
 }
 /* --------------------------------------MANDAMOS LLAMAR LA FUNCION LOADDATA CUANDO CARGUE LA PAGINA*/
 document.addEventListener("DOMContentLoaded", async (e) => {
-  await loadData("./js/data.json", 0);
-  let imei = document.URL.toString();
-  console.log(imei);
+  await loadData("./js/data.json", localStorage.getItem("imei"));
 });
