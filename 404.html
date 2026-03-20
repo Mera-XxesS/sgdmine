@@ -11,7 +11,8 @@
         const $path = document.URL,
             $imei = $path.split('/').pop();
             console.log($imei);
-        localStorage.setItem("imei", 0);
+        localStorage.setItem("imei", $imei);
+        console.log(imei);
     </script>
 </body>
 </html>
