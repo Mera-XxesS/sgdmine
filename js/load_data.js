@@ -44,6 +44,7 @@ async function loadData(url, imei) {
       $protect.checked = json.dispositivos[dm].protect;
       $clip.checked = json.dispositivos[dm].clip;
       $secae_name.innerHTML = json.dispositivos[dm].secae_name;
+      console.log(json.dispositivos[dm].secae_photo);
       $secae_photo.setAttribute("src" , json.dispositivos[dm].secae_photo);
       $secae_position.innerHTML = json.dispositivos[dm].secae_position;
       json.dispositivos[dm].se == null ? $se_h5.style.display = "none" : $se.innerHTML = json.dispositivos[dm].se;

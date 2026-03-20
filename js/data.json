@@ -15,7 +15,7 @@
       "protect": true,
       "clip": true,
       "secae_name": "LEONARDO MAZUCA",
-      "secae_photo": "../assets/img/perfil.jpg",
+      "secae_photo": "assets/img/perfil.jpg",
       "secae_position": "TECNICO DE VOZ Y DATOS",
       "se": null,
       "secae_phone_number": "8719230680",
