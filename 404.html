@@ -7,12 +7,13 @@
 </head>
 <body>
     <script>
-        console.log(document.URL);
+        /* -------------------------VARIABLE QUE GUARDAN LA DIRECCION EN DONDE VIENE EL IMEI */
         const $path = document.URL,
+        /* -------------------------VARIABLE QUE SEPARA LA DIRECCION Y GUARDA NADA MAS EL IMEI */
             $imei = $path.split('/').pop();
-            console.log($imei);
+            /* -------------------------CRAMOS EL IMEI EN UNA VARIABLE LOCAL DEL NAVEGADOR */
         localStorage.setItem("imei", $imei.toString());
-        console.log(localStorage.getItem("imei"));
+        /* -----------------------------REDIRECCIONAMOS A LA PAGINA PRINCIPAL */
         window.location.href = "https://mera-xxess.github.io/sgdmine/";
     </script>
 </body>

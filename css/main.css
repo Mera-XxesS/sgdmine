@@ -57,6 +57,23 @@ label{
 .td_radio{
     text-align: center;
 }
+/* ------------------------------ESTO ES EL CONTENEDOR DE LA IMAGEN DEL DM */
+.dm_photo{
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+/* ------------------------------ESTO HACE QUE SE OCULTE LA CARA DE ATRAS DEL DM */
+.front_image, .back_image{
+    backface-visibility: hidden;
+}
+/* -------------------------------ESTO HACE UN EFECTO ESPEJO PARA QUE EMPIEZE A GIRAR POR EL LADO QUE DEBE SER */
+.back_image{
+    transform: rotateY(180deg);
+    /* ESTO ES PARA QUE QUEDE UNA IMAGEN DETRAS DE OTRA */
+    position: absolute;
+    margin-left: -100%;
+}
+
 /* ---------------------------------------INFORMACION DEL SE/CAE */
 .secae_content{
     display: flex;
@@ -100,4 +117,12 @@ label{
     100% {
       transform: translateX(-100%);
     }
+  }
+  /* --------------ESTA ES LA ANIMACION QUE HACE GIRAR EL TELEFONO */
+  @keyframes girar {
+    0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(180deg); }
+  }
+  .dm_photo{
+    animation: girar 3s linear infinite alternate;
   }

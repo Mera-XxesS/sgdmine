@@ -12,6 +12,7 @@ const $no_dm = document.getElementById("no_dm"),
   $protect = document.getElementById("protect"),
   $clip = document.getElementById("clip"),
   $secae_name = document.getElementById("secae_name"),
+  $secae_photo = document.getElementById("secae_photo"),
   $secae_position = document.getElementById("secae_position"),
   $se = document.getElementById("se"),
   $se_h5 = document.querySelector(".se"),
@@ -30,8 +31,7 @@ async function loadData(url, imei) {
     if (!res.ok) throw { status: res.status, statusText: res.statusText };
     try {
         dm = imei;
-        console.log(imei);
-      $no_dm.textContent = json.dispositivos[dm].no_dm;
+      $no_dm.innerHTML = json.dispositivos[dm].no_dm;
       $imei.innerHTML = json.dispositivos[dm].imei;
       $no_serie.innerHTML = json.dispositivos[dm].no_serie;
       $model.innerHTML = json.dispositivos[dm].model;
@@ -44,6 +44,7 @@ async function loadData(url, imei) {
       $protect.checked = json.dispositivos[dm].protect;
       $clip.checked = json.dispositivos[dm].clip;
       $secae_name.innerHTML = json.dispositivos[dm].secae_name;
+      $secae_photo.setAttribute("src" , json.dispositivos[dm].secae_photo);
       $secae_position.innerHTML = json.dispositivos[dm].secae_position;
       json.dispositivos[dm].se == null ? $se_h5.style.display = "none" : $se.innerHTML = json.dispositivos[dm].se;
       $secae_phone_number.innerHTML = json.dispositivos[dm].secae_phone_number;
