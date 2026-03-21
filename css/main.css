@@ -77,12 +77,17 @@ label{
 /* ---------------------------------------INFORMACION DEL SE/CAE */
 .secae_content{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--color-secundario);
     padding: .5em;
     max-height: 150px;
     border-radius: 25px;
+}
+.secae_photo{
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
 }
 .are_zore{
     display: flex;

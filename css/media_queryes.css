@@ -57,13 +57,13 @@
     }
     /* ----------------------------------------CORRUSEL */
     .carrusel_content{
-        height: 40%;
+        height: 35%;
     }
 }
 /* ----------------------------------------CELULARES GRANDES TABLETS PEQUEÑAS */
 @media only screen and (min-height: 700px) {
     .carrusel_content{
-        height: 50%;
+        height: 45%;
     }
 }
 /* -------------------------------------------TABLETS */

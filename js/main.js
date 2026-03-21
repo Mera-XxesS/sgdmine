@@ -1,5 +1,5 @@
 /* --------------------------ESTO ES EL JS DEL MENSAJE DEL INICIO */
-Swal.fire({
+Swal.fireS({
   title: "<strong>CUIDADO</strong>",
   icon: "info",
   html: `
