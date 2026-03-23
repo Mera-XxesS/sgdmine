@@ -77,7 +77,7 @@ label{
 /* ---------------------------------------INFORMACION DEL SE/CAE */
 .secae_content{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: var(--color-secundario);
     padding: .5em;

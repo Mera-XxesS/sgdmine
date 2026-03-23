@@ -1,6 +1,8 @@
 /* -------------------------VARIABLES/CONSTANTES */
 const $no_dm = document.getElementById("no_dm"),
   $imei = document.getElementById("imei"),
+  $front_image = document.getElementById("front_image"),
+  $back_image = document.getElementById("back_image"),
   $no_serie = document.getElementById("no_serie"),
   $model = document.getElementById("model"),
   $has_charger = document.getElementById("has_charger"),
@@ -20,8 +22,7 @@ const $no_dm = document.getElementById("no_dm"),
   $secae_phone_number = document.getElementById("secae_phone_number"),
   $secae_email = document.getElementById("secae_email"),
   $secae_zore = document.getElementById("secae_zore"),
-  $secae_are = document.getElementById("secae_are"),
-  $secae_employee_number = document.getElementById("secae_employee_number");
+  $secae_are = document.getElementById("secae_are");
   let dm = 0;
 /* --------------------------------------CREAMOS LA FUNCION QUE VA A CAMBIAR LOS DATOS DEL DM Y DEL SE CAE */
 async function loadData(url, imei) {
@@ -51,7 +52,12 @@ async function loadData(url, imei) {
       $secae_email.innerHTML = json.dispositivos[dm].secae_email;
       $secae_zore.innerHTML = json.dispositivos[dm].secae_zore;
       json.dispositivos[dm].secae_are == null ? $are_h5.style.display = "none" : $secae_are.innerHTML = json.dispositivos[dm].secae_are;
-      $secae_employee_number.innerHTML = json.dispositivos[dm].secae_employee_number;
+      if (json.dispositivos[dm].model == "MOTOROLA G54") {
+        console.log("Todavia no tengo las imagenes del motorola")
+      } else {
+        $front_image.setAttribute("src" , "assets/img/dm/wiko/wiko_t3_frente.png");
+        $back_image.setAttribute("src" , "assets/img/dm/wiko/wiko_t3_reverso.png");
+      }
       
     } catch (err) {
       console.log(err);
@@ -63,6 +69,4 @@ async function loadData(url, imei) {
 /* --------------------------------------MANDAMOS LLAMAR LA FUNCION LOADDATA CUANDO CARGUE LA PAGINA*/
 document.addEventListener("DOMContentLoaded", async (e) => {
   await loadData("./js/data.json", localStorage.getItem("imei"));
-  navigator.geolocation.getCurrentPosition(position => {
-});
 });
