@@ -51,7 +51,7 @@ label{
     max-height: 220px;
     border-radius: 25px;
     background-color: var(--color-secundario);
-    border: 1px solid var(--color-secundario);
+    border: 2px solid var(--color-secundario);
         box-shadow: 0 -5px 5px rgb(255 255 255 / 70%), inset 0 -8px 5px rgb(255 255 255 / 50%), 0 8px 8px rgb(0 0 0 / 20%), inset 0 8px 10px rgb(0 0 0 / 20%);
 }
 .dm_info{
@@ -88,12 +88,13 @@ label{
     border-radius: 25px;
     border-radius: 25px;
     background-color: var(--color-secundario);
-    border: 1px solid var(--color-secundario);
+    border: 2px solid var(--color-secundario);
         box-shadow: 0 -5px 5px rgb(255 255 255 / 70%), inset 0 -8px 5px rgb(255 255 255 / 50%), 0 8px 8px rgb(0 0 0 / 20%), inset 0 8px 10px rgb(0 0 0 / 20%);
 }
 .secae_photo{
     border-radius: 50%;
     overflow: hidden;
+    aspect-ratio: 1/1;
 }
 .are_zore{
     display: flex;
