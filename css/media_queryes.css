@@ -18,11 +18,11 @@
     h1 {
         font-size: 1.5em;
         font-weight: 900;
-        color: var(--color-principal);
+        color: var(--color-terciario);
     }
     .sgdm_label{
         font-size: .5em;
-        color: var(--color-principal);
+        color: var(--color-terciario);
     }
     /* ---------------------------------------INFORMACION DEL DM */
     .dm_content{

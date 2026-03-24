@@ -1,6 +1,6 @@
 :root {
   --color-principal: #E4007C;
-  --color-secundario: #F7F7FF;
+  --color-secundario: #cad3dc;
   --color-terciario: #212529;
 }
 *{
@@ -10,13 +10,13 @@
     color: var(--color-terciario);
 }
 body{
-    background-color: var(--color-principal);
+    background-color: var(--color-secundario);
 }
 .header{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--color-terciario);
+    background-color: var(--color-principal);
 }
 .header_content{
     width: 80%;
@@ -25,7 +25,7 @@ body{
     padding: .3em;
 }
 .header_content img{
-    background-color: var(--color-secundario);
+    background-color: var(--color-principal);
 }
 .content{
     display: flex;
@@ -50,6 +50,9 @@ label{
     margin-top: 5%;
     max-height: 220px;
     border-radius: 25px;
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+        box-shadow: 0 -5px 5px rgb(255 255 255 / 70%), inset 0 -8px 5px rgb(255 255 255 / 50%), 0 8px 8px rgb(0 0 0 / 20%), inset 0 8px 10px rgb(0 0 0 / 20%);
 }
 .dm_info{
     padding: 1em;
@@ -83,11 +86,14 @@ label{
     padding: .5em;
     max-height: 150px;
     border-radius: 25px;
+    border-radius: 25px;
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+        box-shadow: 0 -5px 5px rgb(255 255 255 / 70%), inset 0 -8px 5px rgb(255 255 255 / 50%), 0 8px 8px rgb(0 0 0 / 20%), inset 0 8px 10px rgb(0 0 0 / 20%);
 }
 .secae_photo{
     border-radius: 50%;
     overflow: hidden;
-    aspect-ratio: 1 / 1;
 }
 .are_zore{
     display: flex;
