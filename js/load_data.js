@@ -52,11 +52,10 @@ async function loadData(url, imei) {
       $secae_email.innerHTML = json.dispositivos[dm].secae_email;
       $secae_zore.innerHTML = json.dispositivos[dm].secae_zore;
       json.dispositivos[dm].secae_are == null ? $are_h5.style.display = "none" : $secae_are.innerHTML = json.dispositivos[dm].secae_are;
-      if (json.dispositivos[dm].model == "MOTOROLA G54") {
-        console.log("Todavia no tengo las imagenes del motorola")
-      } else {
+      if (json.dispositivos[dm].model == "WIKO T3") {
         $front_image.setAttribute("src" , "assets/img/dm/wiko/wiko_t3_frente.png");
         $back_image.setAttribute("src" , "assets/img/dm/wiko/wiko_t3_reverso.png");
+      } else {
       }
       
     } catch (err) {

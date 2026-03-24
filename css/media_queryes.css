@@ -71,13 +71,102 @@
 }
 /* -------------------------------------------TABLETS */
 @media screen and (min-width: 576px){
-    body {
-        background-color: blue;
+
+    /* ----------------------------------------------HEADER */
+    .header_content{
+        width: 80%;
+        justify-content: space-between;
+    }
+    .header_content img{
+        max-height: 30px;
+        padding: .3em;
+    }
+    .h1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .sgdm_label{
+        color: var(--color-terciario);
+        font-size: .8em;
+    }
+    /* -----------------------------------------------DATOS DEL DISPOSITIVO */
+    .dm_content{
+        width: 80%;
+        margin-top: 7%;
+    }
+    .dm_photo img{
+        max-height: 300px;
+    }
+    /* -----------------------------------------------DETOS DEL SE CAE */
+    .secae_content{
+        width: 80%;
+        margin-top: 7%;
+        padding-top: 1em;
+    }
+    .secae_info{
+        width: 60%;
+    }
+    .are_zore{
+        width: 45%;
+    }
+    .secae_photo{
+        width: 30%;
+        max-width: 20%;
+    }
+    .secae_photo img{
+        width: 100%;
+    }
+    /* -----------------------------------------------------CARROUSEL */
+    .carrusel_content{
+        height: 35%;
     }
 }
 /* -------------------------------------------PC*/
 @media screen and (min-width: 992px){
-    body {
-        background-color: yellow;
+
+    .label{
+        font-size: 1em;
     }
+    /* ------------------------------------------------------HEADER */
+    .header_content{
+        width: 50%;
+    }
+    .header_content img{
+        max-height: 30px;
+        padding: .3em;
+    }
+    /* -------------------------------------------------------DATOS DISPOSITIVO */
+    .dm_content{
+        width: fit-content;
+        margin-top: 2em;
+        padding:.5em 2em;
+    }
+    .dm_photo img{
+        max-height: 200px;
+        margin-right: 1em;
+    } 
+    .dm_photo{
+        animation: none;
+        margin-right: 1em;
+    }
+    .front_image, .back_image{
+        backface-visibility: visible;
+    }
+    .back_image{
+        position: relative;
+        margin-left: 0;
+    }
+    /* -------------------------------------------------------DATOS SE CAE */
+    .secae_content{
+        margin-top: 1em;
+        width: 50%;
+    }
+    .secae_photo {
+        max-width: 10%;
+    }
+    /* -------------------------------------------------------CARROUSEL */
+   .carrusel_content{
+    display: none;
+   }
 }
