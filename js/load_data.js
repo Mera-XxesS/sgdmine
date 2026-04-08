@@ -31,7 +31,7 @@ async function loadData(url, imei) {
       json = await res.json();
     if (!res.ok) throw { status: res.status, statusText: res.statusText };
     try {
-        dm = 16;
+        dm = imei;
       $no_dm.innerHTML = json.dispositivos[dm].no_dm;
       $imei.innerHTML = json.dispositivos[dm].imei;
       $no_serie.innerHTML = json.dispositivos[dm].no_serie;
